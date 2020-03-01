@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Welcome
+author: alex_hedley
 ---
 
 Welcome to my new Blog!
