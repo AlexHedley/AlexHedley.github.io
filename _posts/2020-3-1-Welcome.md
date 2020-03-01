@@ -3,7 +3,7 @@ layout: post
 title: Welcome
 author: alex_hedley
 category: general
-tags: [github]
+tags: [github, general]
 ---
 
 Welcome to my new Blog!
