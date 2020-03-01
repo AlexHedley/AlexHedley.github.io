@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi, I'm a developer from the North East of England building enterprise apps for a local Consultancy in Newcastle.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I enjoy collecting things like [Funko Pops!](https://alexhedley.github.io/funkopop/)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Reach out to me on [Twitter](https://twitter.com/alexhedley)
