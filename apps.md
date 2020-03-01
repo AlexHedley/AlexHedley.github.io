@@ -4,14 +4,11 @@ title: Apps
 permalink: /apps/
 ---
 
-# Apps
-
-- [Apps](#apps)
-  - [Protirus](#protirus)
-  - [Utility](#utility)
-  - [HEXtoObjCColor](#hextoobjccolor)
-  - [iOS](#ios)
-    - [Jack Trelawny](#jack-trelawny)
+- [Protirus](#protirus)
+- [Utility](#utility)
+- [HEXtoObjCColor](#hextoobjccolor)
+- [iOS](#ios)
+  - [Jack Trelawny](#jack-trelawny)
 
 ## Protirus
 
