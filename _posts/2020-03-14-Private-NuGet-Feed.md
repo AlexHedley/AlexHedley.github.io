@@ -8,7 +8,7 @@ tags: [nuget, ado]
 
 As a .NET developer you probably use [NuGet](https://www.nuget.org/) everyday, or something from it.
 
-![NuGet](({{ site.baseurl }}/images/nuget-logo-footer-184x57.png)
+![NuGet]({{ site.baseurl }}/images/nuget-logo-footer-184x57.png)
 
 > What is NuGet?
 > 
