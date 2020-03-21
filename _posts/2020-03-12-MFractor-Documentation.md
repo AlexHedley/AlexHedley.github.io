@@ -12,12 +12,16 @@ The documentation for this product if fab, they use [MkDocs](https://www.mkdocs.
 
 As with any product, documentation is key to helping users find their way about it, and since I use this product and like to help out I offered some assistance.
 
+The page in question was for the **Image Tooltips** feature, which you can find more about on the [blog post](https://www.mfractor.com/blogs/news/mfractor-3-10-smarter-code-fixes-plus-image-and-color-tooltips).
+
+I'm hoping to contribute more in the coming weeks, and look forward to the features being added daily, check out Matthew's [Twitter](https://twitter.com/matthewrdev) to see anything he's working on.
+
 ## GitHub
 
 - https://github.com/mfractor/mfractor.github.io/pull/16
 - https://docs.mfractor.com/image-management/image-tooltips/
 
-There is also now an updated [Contributing](https://docs.mfractor.com/contributing/) section that I started with some helpful comments and updated by [Rafael](https://twitter.com/ravero).
+There is now also a [Contributing](https://docs.mfractor.com/contributing/) section that I started with some helpful comments and updated by [Rafael](https://twitter.com/ravero).
 
 ## Links
 
