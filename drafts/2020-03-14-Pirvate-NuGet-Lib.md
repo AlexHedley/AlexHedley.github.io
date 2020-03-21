@@ -8,23 +8,33 @@ tags: [nuget, ado]
 
 In a previous post I explained how to create a [Private NuGet Feed](/post/Private-NuGet-Feed/).
 
-In this post I want to explain how to create a Private NuGet Library which we can publish to a the feed.
+In this post I want to explain how to create a Private NuGet Library which we can publish to a feed.
 
-Firstly create your .NET Class Library project and add some code.
+Firstly we need something to publish so we can create a .NET Class Library project and add some code. There are many tutorials online for this so I'll let you find this yourself.
 
 Push it to a Repo in your Project.
 
-[Create your first pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=net%2Cyaml%2Cbrowser%2Ctfs-2018-2) then you need to add necessary settings.
+Now that it's in a Repo we will want to create a Pipeline to manage the lib.
+
+- [Create your first pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=net%2Cyaml%2Cbrowser%2Ctfs-2018-2)
+ 
+Then you need to add some necessary settings.
 
 One big question is how to version your Library. Do you handle it yourself, or do you let the build tool handle it?
 
+- [Semantic Versioning 2.0.0](https://semver.org/)
 - [Assembly versioning](https://docs.microsoft.com/en-us/dotnet/standard/assembly/versioning)
+- [SemanticVersion.NET](https://github.com/Ruhrpottpatriot/SemanticVersion)
+
+This is in the format:
 
 `<major version>.<minor version>.<build number>.<revision>`
 
-> For example, version 1.5.1254.0 indicates 1 as the major version, 5 as the minor version, 1254 as the build number, and 0 as the revision number.
+> For example, version **1.5.1254.0** indicates **1** as the major version, **5** as the minor version, **1254** as the build number, and **0** as the revision number.
 
-When using this I like to define a few variables I can control.
+When using this I like to define a few variables, in the pipeline, I can control.
+
+- [Define variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch)
 
 - `version.major` : 1
 - `version.minor` : 0
@@ -32,21 +42,23 @@ When using this I like to define a few variables I can control.
 
 Then I let the pipeline increment a value each time I push and it builds, using `$(Rev:.r)`.
 
-Example: `.1`
+Example: `.1`.
 
-This will prefix with a ".".
+This will prefix with a ".". Don't add your own or you will get ".." in your library.
+
+If you change a variable, i.e. update the Major version to "2" this will reset. See below for more detail.
 
 | Token | Example replacement value |
 | ----- | ------------------------- |
 | `$(Rev:r)` | 2 (The third run on this day will be 3, and so on.)<br /><br /> Use **\(Rev:r)** to ensure that every completed build has a unique name. When a build is completed, if nothing else in the build number has changed, the Rev integer value is incremented by one.<br /><br />If you want to show prefix zeros in the number, you can add additional **'r'** characters. For example, specify **\$(Rev:rr)** if you want the Rev number to begin with 01, 02, and so on. |
 
-And then use a plugin to update the Assembly Info:
+As we now have a plan we need a way to implement this, so you're thinking, how do I update the `AssemblyInfo` during the build pipeline? Well luckily Bleddyn has you covered, use their plugin to update the Assembly Info:
 
-Visual Studio marketplace: 
-[Assembly Info](https://marketplace.visualstudio.com/items?itemName=bleddynrichards.Assembly-Info-Task) from [Bleddyn Richards](https://marketplace.visualstudio.com/publishers/bleddynrichards).
+Visual Studio marketplace:
 
+- [Assembly Info](https://marketplace.visualstudio.com/items?itemName=bleddynrichards.Assembly-Info-Task) from [Bleddyn Richards](https://marketplace.visualstudio.com/publishers/bleddynrichards).
 
-
+Example Name:
 
 ```yml
 name: $(version.major).$(version.minor).$(version.patch)$(rev:.r)
@@ -105,7 +117,7 @@ steps:
     WriteBOM: false
     Product: 'NuGet2'
     Company: '[CompanyName]'
-    Copyright: 'Copyright © yyyy [CompanyName]'
+    Copyright: 'Copyright &copy; yyyy [CompanyName]'
     VersionNumber: '$(Build.BuildNumber)'
     FileVersionNumber: '$(Build.BuildNumber)'
     InformationalVersion: '$(Build.BuildNumber)'
