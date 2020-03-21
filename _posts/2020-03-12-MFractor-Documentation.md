@@ -6,15 +6,18 @@ category: programming
 tags: [github]
 ---
 
-Whilst in the #mfractor channel of the [xamarinchat](https://xamarinchat.slack.com/) slack I offered some help to add/update the documentation for MFractor.
+Whilst in the #mfractor channel of the [xamarinchat](https://xamarinchat.slack.com/) [slack](https://slack.com/) I offered some help to add/update the documentation for MFractor.
+
+The documentation for this product if fab, they use [MkDocs](https://www.mkdocs.org/) which I'm familiar with so that helped the barrier of getting started.
+
+As with any product, documentation is key to helping users find their way about it, and since I use this product and like to help out I offered some assistance.
 
 ## GitHub
 
-https://github.com/mfractor/mfractor.github.io/pull/16
+- https://github.com/mfractor/mfractor.github.io/pull/16
+- https://docs.mfractor.com/image-management/image-tooltips/
 
-https://docs.mfractor.com/image-management/image-tooltips/
-
-There is also now an updated [Contributing](https://docs.mfractor.com/contributing/) section that I added some helpful comments in and better worded by [Rafael](https://twitter.com/ravero).
+There is also now an updated [Contributing](https://docs.mfractor.com/contributing/) section that I started with some helpful comments and updated by [Rafael](https://twitter.com/ravero).
 
 ## Links
 
@@ -27,12 +30,11 @@ There is also now an updated [Contributing](https://docs.mfractor.com/contributi
 > Available for Visual Studio Windows and Mac.
 
 - https://www.mfractor.com/
-
 - https://docs.mfractor.com/
 
 ### Slack
 
-https://xamarinchat.slack.com/
+- https://xamarinchat.slack.com/
 
 ### Twitter
 
