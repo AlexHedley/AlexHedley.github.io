@@ -12,7 +12,7 @@ There is a whole [SDK](https://docs.microsoft.com/en-us/visualstudio/extensibili
 
 Then the [Marketplace](https://marketplace.visualstudio.com/) for Windows and [Add-Ins](https://addins.monodevelop.com/) for Mac.
 
-I've gotten a peak with the [Build Light](/post/buildlight) extension I've help build to see it from both sides.
+I've gotten a peak with the [Build Light](/post/BuildLight) extension I've help build to see it from both sides.
 
 I've also watched [@BrianLagunas](https://twitter.com/brianlagunas) show off some of the code needed for the [Prism Template Pack](https://marketplace.visualstudio.com/items?itemName=BrianLagunas.PrismTemplatePack) wizard on his streams:
 
