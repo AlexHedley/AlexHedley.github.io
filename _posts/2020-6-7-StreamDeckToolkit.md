@@ -13,7 +13,7 @@ The [Stream Deck](https://www.elgato.com/en/gaming/stream-deck) is an awesome ga
 
 Whilst watching [csharpfritz](https://www.twitch.tv/csharpfritz) om twitch I checked the archives and found the following playlist for the [StreamDeck Toolkit](https://www.youtube.com/playlist?list=PLVMqA0_8O85xhVTS3OkTOKhe6IIYj7Tna) where a plugin system written in .NET was built to make it easy to make your own button actions.
 
-With my new love of using [DocFX](post/DocFX/) I thought I'd help out and contribute to the documentation for the toolkit.
+With my new love of using [DocFX](/post/DocFX/) I thought I'd help out and contribute to the documentation for the toolkit.
 
 It didn't take long to spin up a site, move some of the existing documentation over and start adding new items, it was merged on stream on 7th June 2020 (adding YouTube link when published)
 
