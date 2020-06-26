@@ -22,7 +22,7 @@ I originally built a Utility helper app back in 2015, it was to save time and au
 
 I've been an iOS developer for a number of years and wanted a real world case for building a Mac app so I ported this across.
 
-The next logically step was to build a website which had the same functionality, it's a little rough around the edges but open to PRs.
+The next logical step was to build a website which had the same functionality, it's a little rough around the edges but open to PRs.
 
 As the original app was in VB.NET I thought it was time to port it to C# and re-write it as a WPF app, this is on-going.
 
